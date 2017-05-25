@@ -1,0 +1,6 @@
+#!/bin/bash
+# My first script
+
+echo "Hello World!"
+mysql-ctl start
+phpmyadmin-ctl install

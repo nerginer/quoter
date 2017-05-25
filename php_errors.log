@@ -1,0 +1,2 @@
+[11-May-2017 12:18:46 UTC] PHP Fatal error:  Cannot use GuzzleHttp\Psr7\Request as Request because the name is already in use in /home/ubuntu/workspace/app/Http/Controllers/S3ImageController.php on line 8
+[14-May-2017 08:22:00 UTC] PHP Fatal error:  Method Illuminate\View\View::__toString() must not throw an exception, caught ErrorException: Use of undefined constant stlFile - assumed 'stlFile' (View: /home/ubuntu/workspace/resources/views/progress.blade.php) in /home/ubuntu/workspace/app/Http/Controllers/S3ImageController.php on line 0
