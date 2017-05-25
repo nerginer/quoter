@@ -58,17 +58,17 @@
                 <td><select name="renk" id="renk{{$printObject->id}}" onchange="this.form.submit()">
                 <option value="Siyah" {{ ($printObject->color == "Siyah" ? "selected":"") }}>Siyah</option>
                 <option value="Beyaz" {{ ($printObject->color == "Beyaz" ? "selected":"") }}>Beyaz</option>
-                <option value="Yeşil" {{ ($printObject->color == "Yeşil" ? "selected":"") }}>Yeşil</option>
-                <option value="Kırmızı" {{ ($printObject->color == "Kırmızı" ? "selected":"") }}>Kırmızı</option>
+                <option value="Yesil" {{ ($printObject->color == "Yeşil" ? "selected":"") }}>Yeşil</option>
+                <option value="Kirmizi" {{ ($printObject->color == "Kırmızı" ? "selected":"") }}>Kırmızı</option>
                 <option value="Mavi" {{ ($printObject->color == "Mavi" ? "selected":"") }}>Mavi</option>
                 <option value="Turuncu" {{ ($printObject->color == "Turuncu" ? "selected":"") }}>Turuncu</option>
-                <option value="Gümüş" {{ ($printObject->color == "Gümüş" ? "selected":"") }}>Gümüş</option>
+                <option value="Gumus" {{ ($printObject->color == "Gümüş" ? "selected":"") }}>Gümüş</option>
                 <option value="Gri" {{ ($printObject->color == "Gri" ? "selected":"") }}>Gri</option>
-                <option value="Şefaf" {{ ($printObject->color == "Şefaf" ? "selected":"") }}>Şefaf</option>
-                <option value="Altın" {{ ($printObject->color == "Altın" ? "selected":"") }}>Altın</option>
+                <option value="Sefaf" {{ ($printObject->color == "Şefaf" ? "selected":"") }}>Şefaf</option>
+                <option value="Altin" {{ ($printObject->color == "Altın" ? "selected":"") }}>Altın</option>
                 <option value="Pembe" {{ ($printObject->color == "Pembe" ? "selected":"") }}>Pembe</option>
                 <option value="Mor" {{ ($printObject->color == "Mor" ? "selected":"") }}>Mor</option>
-                <option value="Sarı" {{ ($printObject->color == "Sarı" ? "selected":"") }}>Sarı</option>
+                <option value="Sari" {{ ($printObject->color == "Sarı" ? "selected":"") }}>Sarı</option>
                 <option value="RenkFarketmez" {{ ($printObject->color == "RenkFarketmez" ? "selected":"") }}>Renk Farketmez</option>
                     </select>
                 </td>

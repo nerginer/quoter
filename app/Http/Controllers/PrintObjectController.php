@@ -97,7 +97,7 @@ class PrintObjectController extends Controller
             $meterialMultiplier = 1;
           }
           
-          if (($PrintObject->color =="Altın") || ($PrintObject->color =="Şefaf")) {
+          if (($PrintObject->color =="Altin") || ($PrintObject->color =="Sefaf")) {
             $colorMultiplier = 1.5;
           } else {
             $colorMultiplier = 1;
@@ -171,7 +171,7 @@ class PrintObjectController extends Controller
       $json = json_decode(file_get_contents('http://104.236.41.14:4000/api/stl?stlfile='.$StlFileName), true);
       
       $printObject->price=$json['fiyat'];
-      
+      $printObject->base_price=$json['fiyat'];
       
       $printObject->save();
       
