@@ -7,12 +7,36 @@ use Illuminate\Support\Facades\Redirect;
 use Storage;
 use GuzzleHttp;
 
+use Kordy\Ticketit\Models\Ticket;
 use App\PrintObject;
 use Auth;
 use Session;
 use Route;
 
 
+
+    function newUploadTicket($printObject)
+    {    
+    
+    
+        $ticket = new Ticket();
+
+        $ticket->subject ="Yeni Dosya Yüklemesi";
+
+        $ticket->setPurifiedContent("isim: ".$printObject->name."     path: ". $printObject->stl_file_path);
+
+        $ticket->priority_id = 1;
+        $ticket->category_id = 1;
+
+        $ticket->status_id = 1;
+        $ticket->user_id = 1; //Nuri Erginer
+        $ticket->autoSelectAgent();
+
+        $ticket->save();
+    
+    
+    }
+    
 
 class S3ImageController extends Controller
 {
@@ -35,8 +59,7 @@ class S3ImageController extends Controller
     
 
     
-
-    
+ 
     
  
     
@@ -71,6 +94,8 @@ class S3ImageController extends Controller
      
         $printObject->save();
         
+        newUploadTicket($printObject);
+        
        } catch (Illuminate\Database\QueryException $e){
             $errorCode = $e->errorInfo[1];
         
@@ -89,7 +114,8 @@ class S3ImageController extends Controller
     		
     }
     
-  
+    
+ 
  
   
 }

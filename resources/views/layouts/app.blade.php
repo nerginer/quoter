@@ -63,6 +63,10 @@
                             <li><a href="{{ url('/login') }}">Giriş Yap</a></li>
                             <li><a href="{{ url('/register') }}">Üye Ol</a></li>
                         @else
+                            <li><a href="{{ url('/home') }}">Modellerim</a></li>
+                            <li><a href="{{ url('/tickets') }}">Soru Talebi</a></li>
+                            
+                            
                             <li class="dropdown">
                                 <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">
                                     {{ Auth::user()->name }} <span class="caret"></span>
